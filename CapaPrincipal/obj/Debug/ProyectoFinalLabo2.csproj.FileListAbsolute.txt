@@ -1,0 +1,14 @@
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\bin\Debug\ProyectoFinalLabo2.exe.config
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\bin\Debug\ProyectoFinalLabo2.exe
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\bin\Debug\ProyectoFinalLabo2.pdb
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.csproj.AssemblyReference.cache
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.csproj.SuggestedBindingRedirects.cache
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.FormCarga.resources
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.FormDetalle.resources
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.FormPrincipal.resources
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.FormVentas.resources
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.Properties.Resources.resources
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.csproj.GenerateResource.cache
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.csproj.CoreCompileInputs.cache
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.exe
+C:\Users\raced\OneDrive\Escritorio\Laboratorio II\lab\ProyectoFinalLabo2\CapaPrincipal\obj\Debug\ProyectoFinalLabo2.pdb

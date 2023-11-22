@@ -1,0 +1,18 @@
+C:\Users\Alan\Desktop\ProyectoFinalLabo2 - copia\CapaDato\bin\Debug\CapaDato.dll
+C:\Users\Alan\Desktop\ProyectoFinalLabo2 - copia\CapaDato\bin\Debug\CapaDato.pdb
+C:\Users\Alan\Desktop\ProyectoFinalLabo2 - copia\CapaDato\obj\Debug\CapaDato.csproj.AssemblyReference.cache
+C:\Users\Alan\Desktop\ProyectoFinalLabo2 - copia\CapaDato\obj\Debug\CapaDato.csproj.CoreCompileInputs.cache
+C:\Users\Alan\Desktop\ProyectoFinalLabo2 - copia\CapaDato\obj\Debug\CapaDato.dll
+C:\Users\Alan\Desktop\ProyectoFinalLabo2 - copia\CapaDato\obj\Debug\CapaDato.pdb
+C:\Users\raced\Downloads\ProyectoFinalLabo2\CapaDato\bin\Debug\CapaDato.dll
+C:\Users\raced\Downloads\ProyectoFinalLabo2\CapaDato\bin\Debug\CapaDato.pdb
+C:\Users\raced\Downloads\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.csproj.AssemblyReference.cache
+C:\Users\raced\Downloads\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.csproj.CoreCompileInputs.cache
+C:\Users\raced\Downloads\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.dll
+C:\Users\raced\Downloads\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.pdb
+C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\bin\Debug\CapaDato.dll
+C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\bin\Debug\CapaDato.pdb
+C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.csproj.AssemblyReference.cache
+C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.csproj.CoreCompileInputs.cache
+C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.dll
+C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.pdb
