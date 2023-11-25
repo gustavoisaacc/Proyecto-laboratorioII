@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CapaDato;
 
 namespace CapaNegocio
@@ -16,16 +13,21 @@ namespace CapaNegocio
 
             try
             {
-                accesoDato.setearConsulta("SELECT precio, vencimiento, cantidad, codigo, M.nombre Marca, T.nombre [Tipo Producto] FROM PRODUCTOS inner join MARCAS M on PRODUCTOS.idMarca  = M.id inner join TIPOS T on PRODUCTOS.idTipo  = T.id");
+                accesoDato.setearConsulta("SELECT P.id, precio, vencimiento, cantidad, codigo, M.nombre Marca , T.nombre [Tipo Producto], P.idMarca, P.idTipo FROM PRODUCTOS P inner join MARCAS M on P.idMarca  = M.id inner join TIPOS T on P.idTipo  = T.id\r\n");
                 accesoDato.ejecutarLectura();
 
                 while (accesoDato.Lectura.Read())
                 {
                     Producto item = new Producto();
+                    item.Id = (int)accesoDato.Lectura["id"];
                     item.Marca = new Marca();
+                    item.Marca.Id = (int)accesoDato.Lectura["idMarca"];
                     item.Marca.Nombre = (string)accesoDato.Lectura["Marca"];
+
                     item.Tipo = new Tipo();
+                    item.Tipo.Id = (int)accesoDato.Lectura["idTipo"];
                     item.Tipo.Nombre = (string)accesoDato.Lectura["Tipo Producto"];
+
                     item.Codigo = (int)accesoDato.Lectura["codigo"];
                     item.Precio = (double)accesoDato.Lectura["precio"];
                     item.Cantidad = (int)accesoDato.Lectura["cantidad"];
@@ -40,7 +42,10 @@ namespace CapaNegocio
 
                 throw Error;
             }
-            finally { accesoDato.cerrarConexion(); }
+            finally 
+            { 
+                accesoDato.cerrarConexion(); 
+            }
             return productos;
         }
 
@@ -60,6 +65,10 @@ namespace CapaNegocio
                 throw Error;
             }finally { dato.cerrarConexion(); };
         } 
+        public void modificarProducto (Producto productoActualizado)
+        {
+
+        }
 
     }
 }

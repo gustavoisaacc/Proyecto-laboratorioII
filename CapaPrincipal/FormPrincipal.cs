@@ -1,15 +1,7 @@
 ﻿using CapaNegocio;
 using CapaPrincipal;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaNegocio;
 using CapaDato;
 
 
@@ -73,9 +65,9 @@ namespace ProyectoFinalLabo2
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            //Producto seleccionado;
-            //FormCarga nuevoProducto = new FormCarga(seleccionado);
-            //nuevoProducto.ShowDialog();
+            Producto seleccionado = (Producto)dgvLista.CurrentRow.DataBoundItem;
+            FormCarga nuevoProducto = new FormCarga(seleccionado);
+            nuevoProducto.ShowDialog();
         }
     }
 }

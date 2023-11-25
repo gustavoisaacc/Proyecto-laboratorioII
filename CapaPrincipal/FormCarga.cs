@@ -8,17 +8,17 @@ namespace ProyectoFinalLabo2
 {
     public partial class FormCarga : Form
     {
+        Producto producto = null;
        
         public FormCarga()
         {
             InitializeComponent();
         }
-
-
-        private void btnSalir_Click(object sender, EventArgs e)
+        public FormCarga(Producto producto)
         {
-            Close();
-        }
+            InitializeComponent();
+            this.producto = producto;
+        }  
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
@@ -32,25 +32,36 @@ namespace ProyectoFinalLabo2
                     System.Text.RegularExpressions.Regex.IsMatch(txtPrecio.Text, "^[0-9]")
                   )
                 {
-                    Producto producto = new Producto();
+                   NegocioProducto negocioProducto = new NegocioProducto();
 
-                    NegocioProducto negocioProducto = new NegocioProducto();
+                    try
+                    {
+                        if(producto == null) 
+                            producto = new Producto();
 
+                        producto.Precio = Convert.ToInt32(txtPrecio.Text);
+                        producto.Marca = (Marca)cmbMarca.SelectedItem;
+                        producto.Tipo = (Tipo)cmbTipo.SelectedItem;
+                        producto.Vencimiento = dtpVence.Value.ToString("dd/mm//yyyy");
+                        producto.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                        producto.Codigo = Convert.ToInt32(txtCodigo.Text);
 
+                        // MessageBox.Show(producto.Vencimiento + producto.Marca.ToString() + producto.Tipo.ToString());
 
-                    producto.Precio = Convert.ToInt32(txtPrecio.Text);
-                    producto.Marca = (Marca)cmbMarca.SelectedItem;
-                    producto.Tipo = (Tipo)cmbTipo.SelectedItem;
-                    producto.Vencimiento = dtpVence.Value.ToString("dd/mm//yyyy");
-                    producto.Cantidad = Convert.ToInt32(txtCantidad.Text);
-                    producto.Codigo = Convert.ToInt32(txtCodigo.Text);
+                        negocioProducto.cargarProducto(producto);
+                        MessageBox.Show("El Producto fue ingresado con exito!", "Dato Cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // MessageBox.Show(producto.Vencimiento + producto.Marca.ToString() + producto.Tipo.ToString());
+                        negocioProducto.modificarProducto(producto);
+                        MessageBox.Show("El Producto fue modificado con exito!", "Dato Cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    negocioProducto.cargarProducto(producto);
-                    MessageBox.Show("El dato fue ingresado con exito!", "Dato Cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Close();
 
-                    Close();
+                    }
+                    catch (Exception ex)
+                    {
+
+                        MessageBox.Show($"Error {ex.Message}");
+                    }
 
                 }
                 else
@@ -64,9 +75,13 @@ namespace ProyectoFinalLabo2
             {
                 MessageBox.Show("Faltan datos por ingresar", "Error al cargar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
 
         private void FormCarga_Load(object sender, EventArgs e)
         {
@@ -74,7 +89,22 @@ namespace ProyectoFinalLabo2
             negocioTipo negocioTipo = new negocioTipo();
 
             cmbMarca.DataSource = negocioMarca.Listar();
+            cmbMarca.ValueMember = "Id";
+            cmbMarca.DisplayMember = "Nombre";
             cmbTipo.DataSource = negocioTipo.Listar();
+            cmbTipo.ValueMember = "Id";
+            cmbTipo.DisplayMember = "Nombre";
+
+            if (producto != null)
+            {
+                lblTitle.Text = "Editar Producto";
+                txtCantidad.Text = producto.Cantidad.ToString();
+                txtCodigo.Text = producto.Codigo.ToString();
+                txtPrecio.Text = producto.Precio.ToString();
+                dtpVence.Text = producto.Vencimiento.ToString();
+                cmbMarca.SelectedValue = producto.Marca.Id;
+                cmbTipo.SelectedValue = producto.Tipo.Id;
+            }
 
         }
     }
