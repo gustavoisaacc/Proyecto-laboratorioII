@@ -27,3 +27,12 @@ C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.csp
 C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.pdb
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\bin\Debug\CapaNegocio.dll
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\bin\Debug\CapaNegocio.pdb
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\bin\Debug\CapaDato.dll
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\bin\Debug\CapaDato.pdb
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.dll
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaNegocio\obj\Debug\CapaNegocio.pdb

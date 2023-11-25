@@ -73,9 +73,9 @@ namespace ProyectoFinalLabo2
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            FormCarga nuevoProducto = new FormCarga();
-            nuevoProducto.ShowDialog();
-            Producto seleccionado;
+            //Producto seleccionado;
+            //FormCarga nuevoProducto = new FormCarga(seleccionado);
+            //nuevoProducto.ShowDialog();
         }
     }
 }

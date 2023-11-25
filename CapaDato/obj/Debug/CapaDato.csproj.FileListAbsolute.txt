@@ -16,3 +16,9 @@ C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.csproj.As
 C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.csproj.CoreCompileInputs.cache
 C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.dll
 C:\Users\USURIO\Desktop\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.pdb
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaDato\bin\Debug\CapaDato.dll
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaDato\bin\Debug\CapaDato.pdb
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.csproj.AssemblyReference.cache
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.dll
+\\wsl.localhost\Ubuntu\home\gustavoisaac\ProyectoFinalLabo2\CapaDato\obj\Debug\CapaDato.pdb
