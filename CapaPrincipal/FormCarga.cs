@@ -101,11 +101,12 @@ namespace ProyectoFinalLabo2
                 txtCantidad.Text = producto.Cantidad.ToString();
                 txtCodigo.Text = producto.Codigo.ToString();
                 txtPrecio.Text = producto.Precio.ToString();
-                dtpVence.Text = producto.Vencimiento.ToString();
+                
                 cmbMarca.SelectedValue = producto.Marca.Id;
                 cmbTipo.SelectedValue = producto.Tipo.Id;
             }
 
         }
+        
     }
 }

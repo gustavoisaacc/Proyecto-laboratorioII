@@ -67,7 +67,48 @@ namespace CapaNegocio
         } 
         public void modificarProducto (Producto productoActualizado)
         {
+            AccesoDato accesoDato = new AccesoDato();
 
+            try
+            {
+                accesoDato.setearConsulta("update PRODUCTOS set " +
+                    "precio = "+productoActualizado.Precio+"," +
+                    " vencimiento = '"+productoActualizado.Vencimiento+"', " +
+                    "cantidad= "+productoActualizado.Cantidad+", " +
+                    "codigo = "+productoActualizado.Codigo+", " +
+                    "idMarca ="+productoActualizado.Marca.Id+", " +
+                    "idTipo="+productoActualizado.Tipo.Id+" where id = "+productoActualizado.Id+"");
+                accesoDato.ejecutarEscritura();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDato.cerrarConexion();
+            }
+
+        }
+        public void eliminarProducto (int id)
+        {
+            AccesoDato accesoDato = new AccesoDato();
+
+            try
+            {
+                accesoDato.setearConsulta("DELETE FROM PRODUCTOS WHERE id = "+id+"");
+                accesoDato.ejecutarEscritura();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDato.cerrarConexion();
+            }
         }
 
     }

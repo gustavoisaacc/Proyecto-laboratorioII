@@ -68,6 +68,21 @@ namespace ProyectoFinalLabo2
             Producto seleccionado = (Producto)dgvLista.CurrentRow.DataBoundItem;
             FormCarga nuevoProducto = new FormCarga(seleccionado);
             nuevoProducto.ShowDialog();
+            cargaDgv();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("¿Desea eliminar este Prodcuto?", "Eliminar Producto", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            
+            if(resultado == DialogResult.Yes)
+            {
+                Producto seleccionado = (Producto)dgvLista.CurrentRow.DataBoundItem;
+                NegocioProducto negoicio = new NegocioProducto();
+                negoicio.eliminarProducto(seleccionado.Id);
+            }
+
+            cargaDgv();
         }
     }
 }
