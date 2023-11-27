@@ -42,17 +42,23 @@ namespace ProyectoFinalLabo2
                         producto.Precio = Convert.ToInt32(txtPrecio.Text);
                         producto.Marca = (Marca)cmbMarca.SelectedItem;
                         producto.Tipo = (Tipo)cmbTipo.SelectedItem;
-                        producto.Vencimiento = dtpVence.Value.ToString("dd/mm//yyyy");
+                        producto.Vencimiento = dtpVence.Value.ToString("dd/MMM/yyyy");
                         producto.Cantidad = Convert.ToInt32(txtCantidad.Text);
                         producto.Codigo = Convert.ToInt32(txtCodigo.Text);
 
                         // MessageBox.Show(producto.Vencimiento + producto.Marca.ToString() + producto.Tipo.ToString());
 
-                        negocioProducto.cargarProducto(producto);
-                        MessageBox.Show("El Producto fue ingresado con exito!", "Dato Cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if( producto.Id != 0)
+                        {
+                            negocioProducto.modificarProducto(producto);
+                            MessageBox.Show("El Producto fue modificado con exito!", "Dato Cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        negocioProducto.modificarProducto(producto);
-                        MessageBox.Show("El Producto fue modificado con exito!", "Dato Cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            negocioProducto.cargarProducto(producto);
+                            MessageBox.Show("El Producto fue ingresado con exito!", "Dato Cargado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
 
                         Close();
 
@@ -101,7 +107,7 @@ namespace ProyectoFinalLabo2
                 txtCantidad.Text = producto.Cantidad.ToString();
                 txtCodigo.Text = producto.Codigo.ToString();
                 txtPrecio.Text = producto.Precio.ToString();
-                
+                dtpVence.Text = producto.Vencimiento.ToString();
                 cmbMarca.SelectedValue = producto.Marca.Id;
                 cmbTipo.SelectedValue = producto.Tipo.Id;
             }

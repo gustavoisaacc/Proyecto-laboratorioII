@@ -87,7 +87,7 @@
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(446, 26);
-            this.txtCantidad.TabIndex = 8;
+            this.txtCantidad.TabIndex = 3;
             // 
             // txtPrecio
             // 
@@ -98,7 +98,7 @@
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(446, 26);
-            this.txtPrecio.TabIndex = 10;
+            this.txtPrecio.TabIndex = 4;
             // 
             // lblPrecio
             // 
@@ -146,7 +146,7 @@
             this.cmbMarca.Margin = new System.Windows.Forms.Padding(2);
             this.cmbMarca.Name = "cmbMarca";
             this.cmbMarca.Size = new System.Drawing.Size(446, 26);
-            this.cmbMarca.TabIndex = 13;
+            this.cmbMarca.TabIndex = 0;
             // 
             // cmbTipo
             // 
@@ -159,7 +159,7 @@
             this.cmbTipo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(446, 26);
-            this.cmbTipo.TabIndex = 14;
+            this.cmbTipo.TabIndex = 1;
             // 
             // btnCargar
             // 
@@ -170,7 +170,7 @@
             this.btnCargar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(182, 39);
-            this.btnCargar.TabIndex = 16;
+            this.btnCargar.TabIndex = 6;
             this.btnCargar.Text = "Cargar";
             this.btnCargar.UseVisualStyleBackColor = false;
             this.btnCargar.Click += new System.EventHandler(this.btnCargar_Click);
@@ -184,7 +184,7 @@
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(182, 39);
-            this.btnSalir.TabIndex = 17;
+            this.btnSalir.TabIndex = 7;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
@@ -209,14 +209,16 @@
             this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(446, 26);
-            this.txtCodigo.TabIndex = 19;
+            this.txtCodigo.TabIndex = 5;
             // 
             // dtpVence
             // 
+            this.dtpVence.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpVence.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpVence.Location = new System.Drawing.Point(226, 213);
             this.dtpVence.Name = "dtpVence";
-            this.dtpVence.Size = new System.Drawing.Size(200, 20);
-            this.dtpVence.TabIndex = 20;
+            this.dtpVence.Size = new System.Drawing.Size(444, 26);
+            this.dtpVence.TabIndex = 2;
             // 
             // FormCarga
             // 
